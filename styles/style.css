@@ -1,0 +1,235 @@
+
+
+/* setup */
+html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}figcaption,figure,main{display:block}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}button,html [type=button],[type=reset],[type=submit]{-webkit-appearance:button}button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{display:inline-block;vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details,menu{display:block}summary{display:list-item}canvas{display:inline-block}template{display:none}[hidden]{display:none}
+
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: ''; clear: both; height: 0; }
+
+html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
+
+*, *:before, *:after {box-sizing: inherit}
+
+.sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
+/* --------------------------------------------------- */
+
+/* global */
+* {
+    margin: 0;
+    padding: 0;
+    color: rgb(255, 255, 255);
+    /* border: 2px solid black; */
+}
+
+html {
+    font-size: 62.5%;
+}
+
+/* .wrapper {
+    max-width: 1300px;
+    width: 60%;
+    margin: 0 auto;
+} */
+
+
+img {
+    width: 100%;
+    display: block;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+ul, 
+ol, 
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+/* --------------------------------------------- */
+
+/* typography */
+h1 {
+    font-size: 5rem;
+    padding: 20px 0px;
+    text-transform: uppercase;
+    font-family: 'Fredoka One', sans-serif;
+    filter: drop-shadow(8px 3.5px 0px #ff8383);
+    letter-spacing: 4px;
+}
+
+h2 {
+    font-size: 3.5rem;
+    font-family: 'Indie Flower', cursive;
+}
+
+h3 {
+    font-size: 2.5rem;
+    font-family: 'Fredoka One', sans-serif;
+    letter-spacing: 3px;
+}
+
+p {
+    font-size: 1.7rem;
+    text-align: center;
+}
+
+label, 
+input[type="submit"] {
+    /* font-family: 'Montserrat', sans-serif; */
+    font-family: 'Indie Flower', cursive;
+    font-size: 1.7rem;
+    text-align: center;
+}
+
+.invisible {
+    display: none;
+}
+
+
+
+.landingPage {
+    min-width: 400px;
+    width: 50%;
+    height: 750px;
+    margin: 3% auto;
+    padding-top: 250px;
+    background: linear-gradient(125deg, rgb(253, 171, 216) 20%, rgb(255, 253, 145));
+    background-size: 125% 125%;
+    animation: gradient 3s ease infinite;
+    text-align: center;
+    cursor: pointer;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 0%;
+	}
+	50% {
+		background-position: 100% 100%;
+	}
+	100% {
+		background-position: 0% 0%;
+	}
+}
+
+.gamePage {
+    min-width: 400px;
+    width: 50%;
+    height: 750px;
+    margin: 3% auto;
+    background: linear-gradient(125deg, rgb(253, 171, 216) 20%, rgb(255, 253, 145));
+}
+
+.timer {
+    height: 70px;    
+    padding: 20px;
+    text-align: right;
+}
+
+.flag {
+    width: 35%;
+    margin: 3% auto;
+    height: 275px;
+    min-width: 275px;
+    display: flex;
+    align-items: center;
+}
+
+.flagGame {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.countryTitle {
+    font-size: 2.5rem;
+    height: 40px;
+    padding: 0 30px;
+    margin-bottom: 20px;
+    font-family: 'Fredoka One', sans-serif;;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+form label,
+input[type="submit"] {
+    cursor: pointer;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 6%;
+}
+
+form label {
+    background-color: rgb(248, 180, 218);
+    position: relative;
+    top: 0;
+    border-radius: 35px;
+    box-shadow: 0px 5px 0px 0px rgb(236, 158, 202);
+    width: 300px;
+    padding: 10px;
+    text-transform: capitalize;
+    letter-spacing: 5px;
+    margin: 7px auto;
+    text-align: center;
+    transition: ease 200ms;
+}
+
+
+
+
+input[type="radio"]:checked+label{
+    background-color: rgb(247, 168, 213);
+    top: 5px;
+    box-shadow: none;
+}
+
+input[type="submit"] {
+    background-color: rgb(255, 253, 145);
+    box-shadow: 0px 7px 0px 0px rgb(253, 240, 124);
+    position: relative;
+    color: rgb(236, 158, 202);
+    text-transform: uppercase;
+    font-family: 'Fredoka One', cursive;
+    font-size: 2.5rem;
+    letter-spacing: 3px;
+    border: none;
+    border-radius: 35px;
+    width: 300px;
+    padding: 5px;
+    margin: 15px auto;
+}
+
+input[type="submit"]:hover {
+    color: rgb(248, 180, 218);
+}
+
+input[type="submit"]:active {
+    background-color: rgb(252, 241, 141);
+    top: 7px;
+    box-shadow: none;
+}
+
+.endPage {
+    height: 100%;
+    text-align: center;
+    padding: 0 10%;
+    padding-top: 275px;
+    line-height: 2;
+    background: linear-gradient(125deg, rgb(253, 171, 216) 20%, rgb(255, 253, 145));
+    background-size: 125% 125%;
+    animation: gradient 3s ease infinite;
+    cursor: pointer;
+}
+
+.endPage h3 {
+    font-size: 5rem;
+    filter: drop-shadow(8px 3.5px 0px #ff8383);
+}
