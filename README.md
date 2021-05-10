@@ -6,6 +6,6 @@ Inspired by the og [Geo Challenge](https://www.facebook.com/geochallenge/). This
 
 ## License
 
-Copyright &copy; 2019 Cecile Zhang. All rights reserved.
+Copyright &copy; Cecile Zhang. All rights reserved.
 
 Licensed under the [MIT License](./LICENSE).
