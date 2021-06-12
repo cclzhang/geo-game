@@ -1,4 +1,4 @@
-# A Simple Flag Game
+# [A Simple Flag Game](https://cclzhang.github.io/geo-game/)
 
 Inspired by the og [Geo Challenge](https://www.facebook.com/geochallenge/). This game is 1 minute long and tests your knowledge on some of the trickiest flags in the world. 
 
@@ -6,6 +6,6 @@ Inspired by the og [Geo Challenge](https://www.facebook.com/geochallenge/). This
 
 ## License
 
-Copyright &copy; Cecile Zhang. All rights reserved.
+Copyright &copy; [Cecile Zhang](http://www.cecilezhang.com). All rights reserved.
 
 Licensed under the [MIT License](./LICENSE).
